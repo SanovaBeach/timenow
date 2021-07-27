@@ -1,0 +1,39 @@
+.Card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+  margin-top: 6.5rem;
+
+  &_content {
+    padding: 4rem;
+    border: 1px solid darkgray;
+    display: flex;
+    flex-direction: column;
+  }
+  &_price {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+  &_month {
+    color: lightgray;
+    font-size: 1.6rem;
+  }
+
+  &_desc {
+    font-size: 1.6rem;
+    color: rgb(143, 139, 139);
+  }
+  &_detailsContainer {
+    position: relative;
+  }
+  &_details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+  &_image {
+    margin-right: 1.5rem;
+  }
+}

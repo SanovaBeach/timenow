@@ -6,6 +6,8 @@
 
   &_container {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &_left {
     flex: 0.5;

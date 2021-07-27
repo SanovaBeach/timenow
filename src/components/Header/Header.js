@@ -7,7 +7,7 @@ import check from "../../Assets/Checkmark.svg";
 const Header = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <header className="Header container">
         <div className="Header_left">
           <section className="Header_card">

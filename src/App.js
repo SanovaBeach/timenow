@@ -1,11 +1,17 @@
-import { Details, Header, MoreDetails } from "./components";
+import { Navbar, Footer } from "./components";
+import { Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Price from "./pages/Price";
 
 function App() {
   return (
     <>
-      <Header />
-      <Details />
-      <MoreDetails />
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/pricing" component={Price} />
+      </Switch>
+      <Footer />
     </>
   );
 }
