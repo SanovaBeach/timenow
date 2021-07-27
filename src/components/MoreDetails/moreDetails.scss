@@ -1,0 +1,56 @@
+@import "../../styles/variables.scss";
+
+.More {
+  background-color: rgba($lightBlue, 0.5);
+  padding: 5rem 0;
+
+  &_container {
+    display: flex;
+  }
+  &_left {
+    flex: 0.5;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+  }
+  &_card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 50rem;
+
+    & > * {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &_subheading {
+    color: $darkBlue;
+  }
+  &_heading {
+    color: $bluishGreen;
+    font-size: 3rem;
+  }
+  &_desc {
+    color: rgb(87, 78, 78);
+  }
+  &_right {
+    flex: 0.5;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+  }
+  &_button {
+    color: rgb(87, 78, 78);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 2rem;
+    font-weight: bold;
+  }
+}

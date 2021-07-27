@@ -1,0 +1,57 @@
+@import "../../styles/variables.scss";
+
+.Details {
+  padding: 8rem 0;
+
+  &_container {
+    display: flex;
+  }
+  // left side
+  &_left {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-width: 50%;
+    flex-direction: column;
+  }
+  &_card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 60rem;
+  }
+  &_heading {
+    color: $darkBlue;
+  }
+  &_imgContainer {
+    margin-top: 4rem;
+  }
+  &_image {
+    height: 5rem;
+    width: 5rem;
+    margin-right: 1.5rem;
+  }
+
+  // end of left side
+
+  // right side
+  &_right {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+  &_details {
+  }
+  &_desc {
+    margin-bottom: 1rem;
+  }
+
+  // end of right side
+}

@@ -1,0 +1,32 @@
+.Navbar {
+  &_container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  &_menu {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 111rem;
+    margin: 0 auto;
+  }
+  &_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  &_logo {
+    margin-right: 5rem;
+    cursor: pointer;
+  }
+  &_item {
+    margin: 0 1rem;
+    cursor: pointer;
+  }
+  &_cta {
+  }
+}

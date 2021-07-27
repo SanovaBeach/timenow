@@ -1,0 +1,74 @@
+@import "../../styles/variables.scss";
+
+.Header {
+  height: 90rem;
+  display: flex;
+
+  &_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  // left side of Header
+  &_left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_card {
+    width: 100%;
+    max-width: 45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &_heading {
+    font-size: 5rem;
+    color: $darkBlue;
+  }
+  &_subheading {
+    color: darkgray;
+    max-width: 45rem;
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+  }
+  // button container
+  &_btnContainer {
+    align-self: flex-start;
+    margin-top: 2rem;
+  }
+  &_button {
+    padding: 2rem 4rem;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    color: rgb(109, 106, 106);
+    cursor: pointer;
+  }
+  &_check {
+    margin-right: 1.5rem;
+  }
+  &_span {
+    color: $darkBlue;
+    border-bottom: 5px solid $darkBlue;
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }
+  // right side of header
+  &_right {
+    width: 50%;
+    background-color: $lightBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_image {
+    background-size: contain;
+    width: 100%;
+    padding: 4rem;
+  }
+}
