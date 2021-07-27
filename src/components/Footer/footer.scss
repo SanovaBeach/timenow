@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .Footer {
   padding: 7rem 0;
 
@@ -5,8 +7,16 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+    }
   }
   &_logo {
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 2rem;
+      margin-left: 2rem;
+    }
   }
   // left side
   &_left {
@@ -40,6 +50,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: $tablet) {
+      justify-content: flex-start;
+      margin-top: 5rem;
+    }
   }
   &_ctaContainer {
     border: 1px solid lightgray;

@@ -21,6 +21,10 @@ body {
   max-width: 144rem;
   padding: 0 5rem;
   margin: 0 auto;
+
+  @media screen and (max-width: $tablet) {
+    padding: 0 3rem;
+  }
 }
 
 // buttons

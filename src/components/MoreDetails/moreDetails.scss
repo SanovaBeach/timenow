@@ -8,6 +8,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+    }
   }
   &_left {
     flex: 0.5;
@@ -16,6 +20,12 @@
     align-items: center;
     justify-content: center;
     max-width: 50%;
+
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      max-width: 100%;
+      justify-content: flex-start;
+    }
   }
   &_card {
     display: flex;
@@ -27,6 +37,11 @@
     & > * {
       margin-bottom: 2rem;
     }
+
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 
   &_subheading {
@@ -35,6 +50,10 @@
   &_heading {
     color: $bluishGreen;
     font-size: 3rem;
+
+    @media screen and (max-width: $tablet) {
+      max-width: 50rem;
+    }
   }
   &_desc {
     color: rgb(87, 78, 78);
@@ -46,6 +65,12 @@
     align-items: center;
     justify-content: center;
     max-width: 50%;
+
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      max-width: 100%;
+      justify-content: flex-start;
+    }
   }
   &_button {
     color: rgb(87, 78, 78);

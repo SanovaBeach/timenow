@@ -7,6 +7,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+    }
   }
   // left side
   &_left {
@@ -17,6 +21,11 @@
     width: 50%;
     max-width: 50%;
     flex-direction: column;
+
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      max-width: 100%;
+    }
   }
   &_card {
     display: flex;
@@ -24,6 +33,12 @@
     align-items: flex-start;
     flex-direction: column;
     max-width: 60rem;
+
+    @media screen and (max-width: $tablet) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
   }
   &_heading {
     color: $darkBlue;
@@ -48,6 +63,12 @@
     width: 50%;
     max-width: 50rem;
     margin: 0 auto;
+
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 3rem;
+    }
   }
   &_details {
   }
