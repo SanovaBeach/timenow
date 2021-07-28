@@ -2,17 +2,17 @@ import React from "react";
 import "./card.scss";
 import check from "../../Assets/Checkmark.svg";
 
-const Card = ({ cardData }) => {
+const Card = ({ cardData, isToggled }) => {
   return (
     <>
       <div className="Card">
         {cardData.map((card, index) => {
-          const { bill, desc, details, label } = card;
+          const { bill, year, desc, details, label } = card;
           return (
             <section className="Card_content" key={index}>
               <h1 className="Card_price">
-                {bill}
-                <span className="Card_month">/mo</span>
+                {isToggled ? year : bill}
+                <span className="Card_month">{isToggled ? "/yr" : "/mo"}</span>
               </h1>
               <p className="Card_desc">{desc}</p>
               <hr style={{ margin: "3rem 0" }} />

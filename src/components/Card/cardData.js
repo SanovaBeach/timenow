@@ -3,6 +3,7 @@ import check from "../../Assets/Checkmark.svg";
 export const cardData = [
   {
     bill: "$4",
+    year: "$40",
     desc: 'Perfect plan if you"re just starting out.',
     details: [
       {
@@ -22,6 +23,8 @@ export const cardData = [
   },
   {
     bill: "$12",
+    year: "$120",
+
     desc: 'Perfect plan if you"re a heavy data user.',
     details: [
       {
@@ -45,6 +48,8 @@ export const cardData = [
   },
   {
     bill: "$7",
+    year: "$70",
+
     desc: 'Perfect plan if you"re just starting out.',
     details: [
       {
