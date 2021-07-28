@@ -25,6 +25,12 @@
     max-width: 50%;
     display: flex;
     justify-content: space-evenly;
+
+    @media screen and (max-width: $mobile) {
+      justify-content: space-between;
+      width: 100%;
+      max-width: 100%;
+    }
   }
   &_card {
   }

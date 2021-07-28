@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .Navbar {
   &_container {
     position: absolute;
@@ -26,8 +28,26 @@
   &_item {
     margin: 0 1rem;
     cursor: pointer;
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
   }
   &_cta {
     margin-right: 3rem;
+
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &_mobileIcon {
+    display: none;
+    @media screen and (max-width: $mobile) {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      right: 5rem;
+      bottom: 1rem;
+    }
   }
 }

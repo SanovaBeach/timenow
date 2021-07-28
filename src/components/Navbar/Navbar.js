@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../Assets/Logo.svg";
+import mobile from "../../Assets/Hamburger Menu.svg";
 import "./navbar.scss";
 import { Link } from "react-router-dom";
 const Navbar = () => {
@@ -27,6 +28,7 @@ const Navbar = () => {
               <button className="button-primary">Start Scheduling</button>
             </div>
           </div>
+          <img src={mobile} alt="" className="Navbar_mobileIcon" />
         </div>
       </nav>
     </>

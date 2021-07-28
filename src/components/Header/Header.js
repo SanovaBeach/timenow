@@ -25,7 +25,7 @@ const Header = () => {
             </div>
             <p className="Header_subheading">
               <img src={check} alt="checkmark logo" className="Header_check" />
-              TimeNow does not sell your data.{" "}
+              TimeNow does not sell your data.
               <span className="Header_span">Learn more</span>
             </p>
           </section>
